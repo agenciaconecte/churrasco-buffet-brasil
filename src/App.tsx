@@ -186,7 +186,7 @@ export default function App() {
         </section>
 
         {/* Authority Section */}
-        <section className="py-12 glass border-y border-white/5">
+        <section className="py-12 bg-white border-y border-black/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
@@ -204,7 +204,7 @@ export default function App() {
                   className="text-center animate-glow-blue"
                 >
                   <div className="text-3xl sm:text-4xl font-display font-bold text-secondary mb-1">{stat.value}</div>
-                  <div className="text-xs sm:text-sm text-gray-400 font-medium uppercase tracking-wider">{stat.label}</div>
+                  <div className="text-xs sm:text-sm text-gray-600 font-medium uppercase tracking-wider">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -256,11 +256,11 @@ export default function App() {
         </section>
 
         {/* Bento Grid Diferenciais */}
-        <section id="diferenciais" className="py-16 md:py-24 bg-white/[0.02]">
+        <section id="diferenciais" className="py-16 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-4">Por que nos escolher?</h2>
-              <p className="text-gray-400">O segredo do nosso sucesso está nos detalhes e na paixão pelo que fazemos.</p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-4 text-black">Por que nos escolher?</h2>
+              <p className="text-gray-600">O segredo do nosso sucesso está nos detalhes e na paixão pelo que fazemos.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[240px]">
@@ -269,7 +269,7 @@ export default function App() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 initial={{ opacity: 0, scale: 0.95 }}
                 viewport={{ once: true }}
-                className="md:col-span-2 md:row-span-2 rounded-3xl p-6 sm:p-10 flex flex-col justify-end relative overflow-hidden group border border-white/10 min-h-[450px] md:min-h-0"
+                className="md:col-span-2 md:row-span-2 rounded-3xl p-6 sm:p-10 flex flex-col justify-end relative overflow-hidden group border border-black/5 min-h-[450px] md:min-h-0 shadow-sm"
               >
                 <div className="absolute inset-0 z-0">
                   <img 
@@ -278,15 +278,15 @@ export default function App() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 </div>
                 
-                <div className="relative z-10 glass p-6 rounded-2xl border border-white/10 backdrop-blur-md">
+                <div className="relative z-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-xl">
                   <div className="flex gap-1 mb-4">
                     {[1,2,3,4,5].map(i => <Star key={i} className="w-5 h-5 fill-primary text-primary" />)}
                   </div>
-                  <h3 className="text-3xl font-bold mb-4">Experiência que faz a diferença</h3>
-                  <p className="text-gray-200 text-lg max-w-md">
+                  <h3 className="text-3xl font-bold mb-4 text-black">Experiência que faz a diferença</h3>
+                  <p className="text-gray-700 text-lg max-w-md">
                     Com Fátima Oliveira e Edmilson Silva à frente, somamos mais de 20 anos de expertise entregando o melhor churrasco da região.
                   </p>
                 </div>
@@ -297,13 +297,13 @@ export default function App() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 initial={{ opacity: 0, scale: 0.95 }}
                 viewport={{ once: true }}
-                className="glass rounded-3xl p-8 flex flex-col justify-center text-center"
+                className="bg-gray-50 rounded-3xl p-8 flex flex-col justify-center text-center border border-black/5 shadow-sm"
               >
                 <div className="text-secondary mb-4 flex justify-center">
                   <CheckCircle2 className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Carnes Nobres</h3>
-                <p className="text-gray-400 text-sm">Seleção rigorosa dos melhores cortes para garantir sabor e maciez.</p>
+                <h3 className="text-xl font-bold mb-2 text-black">Carnes Nobres</h3>
+                <p className="text-gray-600 text-sm">Seleção rigorosa dos melhores cortes para garantir sabor e maciez.</p>
               </motion.div>
 
               {/* Card 3 */}
@@ -311,13 +311,13 @@ export default function App() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 initial={{ opacity: 0, scale: 0.95 }}
                 viewport={{ once: true }}
-                className="glass rounded-3xl p-8 flex flex-col justify-center text-center"
+                className="bg-gray-50 rounded-3xl p-8 flex flex-col justify-center text-center border border-black/5 shadow-sm"
               >
                 <div className="text-primary mb-4 flex justify-center">
                   <Clock className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Pontualidade</h3>
-                <p className="text-gray-400 text-sm">Respeito total ao cronograma do seu evento, sem atrasos.</p>
+                <h3 className="text-xl font-bold mb-2 text-black">Pontualidade</h3>
+                <p className="text-gray-600 text-sm">Respeito total ao cronograma do seu evento, sem atrasos.</p>
               </motion.div>
             </div>
           </div>
